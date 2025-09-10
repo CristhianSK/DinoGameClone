@@ -2,8 +2,8 @@ object FDerrota: TFDerrota
   Left = 0
   Top = 0
   Caption = 'Derrota'
-  ClientHeight = 207
-  ClientWidth = 635
+  ClientHeight = 543
+  ClientWidth = 657
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -18,16 +18,18 @@ object FDerrota: TFDerrota
   object Panel1: TPanel
     Left = 0
     Top = 0
-    Width = 635
-    Height = 207
+    Width = 657
+    Height = 543
     Align = alClient
     TabOrder = 0
+    ExplicitWidth = 635
+    ExplicitHeight = 207
     object lblTitulo: TLabel
       AlignWithMargins = True
       Left = 4
       Top = 4
-      Width = 627
-      Height = 29
+      Width = 649
+      Height = 25
       Align = alTop
       Alignment = taCenter
       Caption = 'Voc'#234' Perdeu'
@@ -37,11 +39,12 @@ object FDerrota: TFDerrota
       Font.Name = 'Roboto'
       Font.Style = []
       ParentFont = False
+      ExplicitWidth = 118
     end
     object lblPontos: TLabel
       Left = 1
-      Top = 36
-      Width = 633
+      Top = 32
+      Width = 655
       Height = 23
       Align = alTop
       Alignment = taCenter
@@ -52,76 +55,70 @@ object FDerrota: TFDerrota
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
+      ExplicitTop = 36
       ExplicitWidth = 68
     end
     object lblNome: TLabel
       AlignWithMargins = True
       Left = 4
-      Top = 89
-      Width = 627
+      Top = 85
+      Width = 649
       Height = 13
       Margins.Top = 30
       Align = alTop
       Alignment = taCenter
       Caption = 'UserName:'
-      ExplicitLeft = 0
-      ExplicitTop = 56
-      ExplicitWidth = 633
+      ExplicitTop = 89
+      ExplicitWidth = 53
     end
     object btnReiniciar: TButton
       AlignWithMargins = True
-      Left = 71
-      Top = 141
-      Width = 180
-      Height = 45
-      Margins.Left = 70
-      Margins.Top = 10
-      Margins.Bottom = 20
-      Align = alLeft
+      Left = 448
+      Top = 477
+      Width = 205
+      Height = 62
+      Margins.Top = 350
+      Align = alRight
       Caption = 'Reiniciar'
       TabOrder = 0
       OnClick = btnReiniciarClick
-      ExplicitLeft = 51
-      ExplicitTop = 131
-      ExplicitHeight = 37
+      ExplicitTop = 427
+      ExplicitHeight = 112
     end
     object btnFechar: TButton
       AlignWithMargins = True
-      Left = 384
-      Top = 141
-      Width = 180
-      Height = 45
-      Margins.Top = 10
-      Margins.Right = 70
-      Margins.Bottom = 20
-      Align = alRight
+      Left = 215
+      Top = 477
+      Width = 227
+      Height = 62
+      Margins.Top = 350
+      Align = alClient
       Caption = 'Sair'
       TabOrder = 1
       OnClick = btnFecharClick
-      ExplicitLeft = 408
-      ExplicitTop = 131
-      ExplicitHeight = 37
+      ExplicitTop = 427
+      ExplicitWidth = 218
+      ExplicitHeight = 113
     end
     object btnSalvar: TButton
       AlignWithMargins = True
-      Left = 257
-      Top = 141
-      Width = 121
-      Height = 45
-      Margins.Top = 10
-      Margins.Bottom = 20
-      Align = alClient
+      Left = 4
+      Top = 477
+      Width = 205
+      Height = 62
+      Margins.Top = 350
+      Align = alLeft
       Caption = 'Salvar'
       TabOrder = 2
       OnClick = btnSalvarClick
-      ExplicitTop = 112
-      ExplicitHeight = 39
+      ExplicitTop = 427
+      ExplicitHeight = 112
     end
     object inputUsername: TEdit
       AlignWithMargins = True
       Left = 251
-      Top = 110
-      Width = 133
+      Top = 106
+      Width = 155
       Height = 21
       Hint = 'UserName'
       Margins.Left = 250
@@ -131,8 +128,25 @@ object FDerrota: TFDerrota
       Align = alTop
       Alignment = taCenter
       TabOrder = 3
-      ExplicitLeft = 245
-      ExplicitTop = 72
+      ExplicitWidth = 133
+    end
+    object ltbxHighscore: TListBox
+      AlignWithMargins = True
+      Left = 212
+      Top = 177
+      Width = 233
+      Height = 165
+      Margins.Left = 0
+      Margins.Top = 50
+      Margins.Right = 0
+      Margins.Bottom = 200
+      Align = alClient
+      ItemHeight = 13
+      TabOrder = 4
+      ExplicitLeft = 68
+      ExplicitTop = 65
+      ExplicitWidth = 402
+      ExplicitHeight = 166
     end
   end
 end

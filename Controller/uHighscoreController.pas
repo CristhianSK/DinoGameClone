@@ -1,7 +1,14 @@
 unit uHighscoreController;
 
 interface
-uses uHighscoreRepository;
+uses
+uHighscoreModel, uHighscoreRepository, System.Generics.Collections;
+
+type
+THighscoreController = class
+  public
+
+end;
 
 implementation
 

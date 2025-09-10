@@ -4,7 +4,8 @@ interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls, uConnection, FireDAC.Comp.Client;
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls, uConnection, FireDAC.Comp.Client,
+  System.ImageList, Vcl.ImgList;
 
 type
   TFDerrota = class(TForm)
@@ -16,6 +17,7 @@ type
     lblPontos: TLabel;
     inputUsername: TEdit;
     lblNome: TLabel;
+    ltbxHighscore: TListBox;
     procedure btnReiniciarClick(Sender: TObject);
     procedure btnFecharClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
