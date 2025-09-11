@@ -5,7 +5,8 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls, uConnection, FireDAC.Comp.Client,
-  System.ImageList, Vcl.ImgList;
+  System.ImageList, Vcl.ImgList,
+  uHighscoreController, uHighscoreModel;
 
 type
   TFDerrota = class(TForm)
@@ -43,14 +44,16 @@ begin
 end;
 
 procedure TFDerrota.btnSalvarClick(Sender: TObject);
+var controller : THighscoreController;
+var score : THighscore;
+var resultado : String;
+
 begin
+
   try
-//    dbConnection.FDConnection1.Connected := True;
-  //  dbConnection.FDQuery.SQL.Text := 'INSERT INTO public.highscore (username, score, "date") VALUES('+QuotedStr(inputUsername.Text) +', '+ pontos.ToString +', now());';
-    //dbConnection.FDQuery.ExecSQL;
-    ShowMessage('Pontuação Salva!');
-    btnSalvar.Enabled := False;
-    inputUsername.Text := '';
+    THighscore.Create((inputUsername.Text), pontos);
+    resultado := controller.salvarHighscore(score);
+    ShowMessage(resultado);
   except
     on E: Exception do ShowMessage('Erro ao salvar pontuação: ' + E.Message);
   end;

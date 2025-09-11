@@ -22,8 +22,6 @@ object FDerrota: TFDerrota
     Height = 543
     Align = alClient
     TabOrder = 0
-    ExplicitWidth = 635
-    ExplicitHeight = 207
     object lblTitulo: TLabel
       AlignWithMargins = True
       Left = 4
@@ -55,7 +53,6 @@ object FDerrota: TFDerrota
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      ExplicitTop = 36
       ExplicitWidth = 68
     end
     object lblNome: TLabel
@@ -68,7 +65,6 @@ object FDerrota: TFDerrota
       Align = alTop
       Alignment = taCenter
       Caption = 'UserName:'
-      ExplicitTop = 89
       ExplicitWidth = 53
     end
     object btnReiniciar: TButton
@@ -82,8 +78,6 @@ object FDerrota: TFDerrota
       Caption = 'Reiniciar'
       TabOrder = 0
       OnClick = btnReiniciarClick
-      ExplicitTop = 427
-      ExplicitHeight = 112
     end
     object btnFechar: TButton
       AlignWithMargins = True
@@ -96,9 +90,6 @@ object FDerrota: TFDerrota
       Caption = 'Sair'
       TabOrder = 1
       OnClick = btnFecharClick
-      ExplicitTop = 427
-      ExplicitWidth = 218
-      ExplicitHeight = 113
     end
     object btnSalvar: TButton
       AlignWithMargins = True
@@ -111,8 +102,6 @@ object FDerrota: TFDerrota
       Caption = 'Salvar'
       TabOrder = 2
       OnClick = btnSalvarClick
-      ExplicitTop = 427
-      ExplicitHeight = 112
     end
     object inputUsername: TEdit
       AlignWithMargins = True
@@ -128,7 +117,6 @@ object FDerrota: TFDerrota
       Align = alTop
       Alignment = taCenter
       TabOrder = 3
-      ExplicitWidth = 133
     end
     object ltbxHighscore: TListBox
       AlignWithMargins = True
@@ -143,10 +131,6 @@ object FDerrota: TFDerrota
       Align = alClient
       ItemHeight = 13
       TabOrder = 4
-      ExplicitLeft = 68
-      ExplicitTop = 65
-      ExplicitWidth = 402
-      ExplicitHeight = 166
     end
   end
 end
