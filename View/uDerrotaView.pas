@@ -51,9 +51,14 @@ var resultado : String;
 begin
 
   try
-    THighscore.Create((inputUsername.Text), pontos);
+    score := THighscore.Create((inputUsername.Text), pontos);
+    controller := THighscoreController.Create;
+
     resultado := controller.salvarHighscore(score);
     ShowMessage(resultado);
+
+    controller.Free;
+    score.Free;
   except
     on E: Exception do ShowMessage('Erro ao salvar pontuação: ' + E.Message);
   end;
